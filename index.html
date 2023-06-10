@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/cv.css" />
+    <script src="./assets/scripts/cv.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AmagiTech/JSLoader/amagiloader.js"></script>;
+  </head>
+  <body>
+    <div class="section">
+      <a class="btn btn-primary" onclick="downloadFullCV()">Download CV as Pdf</a>
+    </div>
+    <div class="container" id="container">
+      <div class="name-row">
+        <h1>Jovana Milosavljevic</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-5 bg-photo">
+          <div class="profile-section">
+            <img
+              class="profile-image"
+              src="https://media.licdn.com/dms/image/C5603AQF2hvXv2FaUTA/profile-displayphoto-shrink_400_400/0/1653033862257?e=1691625600&v=beta&t=hi6ya8Ln36npBTyRx9nhEsh2w1mHqb_8JiB-PR6ZhBc"
+              alt="Profile Image"
+            />
+            <div class="languages-section">
+              <h3>Languages</h3>
+              <ul>
+                <li>
+                  <span class="language-name">English</span>
+                  <span class="language-proficiency"
+                    >Full professional proficiency</span
+                  >
+                </li>
+                <li>
+                  <span class="language-name">French</span>
+                  <span class="language-proficiency"
+                    >Elementary proficiency</span
+                  >
+                </li>
+                <li>
+                  <span class="language-name">Italian</span>
+                  <span class="language-proficiency"
+                    >Elementary proficiency</span
+                  >
+                </li>
+                <li>
+                  <span class="language-name">Russian</span>
+                  <span class="language-proficiency"
+                    >Elementary proficiency</span
+                  >
+                </li>
+                <li>
+                  <span class="language-name">Serbian</span>
+                  <span class="language-proficiency"
+                    >Native or bilingual proficiency</span
+                  >
+                </li>
+                <li>
+                  <span class="language-name">Spanish</span>
+                  <span class="language-proficiency"
+                    >Elementary proficiency</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="skills-section">
+              <h3>Skills</h3>
+              <ul>
+                <li>Amazon Web Services (AWS)</li>
+                <li>Jenkins</li>
+                <li>Spring Boot</li>
+                <li>Java</li>
+                <li>Agile Methodologies</li>
+                <li>Spring Framework</li>
+                <li>Software Documentation</li>
+                <li>Social Media Marketing</li>
+                <li>Human Resources</li>
+                <li>Content Writing</li>
+                <li>Online Marketing</li>
+                <li>Web Content</li>
+                <li>Digital Marketing</li>
+                <li>Database Administration</li>
+                <li>Public Relations</li>
+                <li>Social Media</li>
+                <li>Marketing Strategy</li>
+                <li>Blogging</li>
+                <li>Scrum</li>
+                <li>Project Management</li>
+                <li>Agile Project Management</li>
+                <li>Software Project Management</li>
+                <li>Version Control</li>
+                <li>Hibernate</li>
+                <li>Oracle Database</li>
+                <li>MySQL</li>
+                <li>Angular</li>
+                <li>JavaServer Pages (JSP)</li>
+                <li>Spring MVC</li>
+                <li>SQL</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>Maven</li>
+                <li>Git</li>
+                <li>People Management</li>
+                <li>Team Leadership</li>
+                <li>Team Management</li>
+                <li>Management</li>
+                <li>Social Networking</li>
+                <li>ORM Tools</li>
+                <li>Spring Security</li>
+                <li>Object-Relational Mapping (ORM)</li>
+                <li>UML Tools</li>
+                <li>Marketing Communications</li>
+                <li>Global Human Resources Management</li>
+                <li>Agile Application Development</li>
+                <li>Career Management</li>
+                <li>Delegation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 bg-skills">
+          <div class="section">
+            <div class="section info">
+              <p>
+                Email:
+                <a href="mailto:jovanamilosav30@gmail.com"
+                  >jovanamilosav30@gmail.com</a
+                >
+              </p>
+              <p>Phone: <a href="tel:+381601608900">0601608900</a></p>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/milosavljevic-j/"
+                  >LinkedIn</a>
+              </p>
+            </div>
+            <div class="section">
+              <h3>Software development related experience</h3>
+              <div class="job">
+                <h3>
+                  <a href="#experience3" data-toggle="collapse"
+                    >Junior Java Developer at ISUM (Informational System of
+                    Metropolitan University)</a
+                  >
+                </h3>
+                <p class="years">June 2015 - January 2016</p>
+                <div id="experience3" class="collapse">
+                  <p class="description">
+                    ISUM is a big system for tracking all the information about
+                    everything in our University - students, grades,
+                    achievements, homework, professors, classes, schedules,
+                    paychecks, etc. My role was in maintaining the system as a
+                    part of a team, creating new features, fixing bugs, and
+                    creating reports by querying the database. My tasks included
+                    creating entity class and mapping it using Hibernate,
+                    creating DAO layer and all needed methods (CRUD operations
+                    using HQL), creating a business layer if needed for
+                    transforming data, creating controllers and front end (HTML,
+                    CSS, .js) needed for the given data, testing, and committing
+                    to SVN. My tasks also included writing queries needed for
+                    the reports and fixing bugs that were reported. The system
+                    was created in Java using Tapestry, Oracle database and
+                    Hibernate, with JavaScript, jQuery, and HTML. The team was
+                    using SVN for version control.
+                  </p>
+                </div>
+              </div>
+              <div class="job">
+                <h3>
+                  <a href="#experience4" data-toggle="collapse"
+                    >Junior Software Developer at Kirey d.o.o</a
+                  >
+                </h3>
+                <p class="years">April 2016 - July 2017</p>
+                <div id="experience4" class="collapse">
+                  <p class="description">
+                    My role was to create system features on FinTech project
+                    using Java with Spring MVC and Hibernate. My tasks included
+                    creating Error Handling system using Spring AOP, which was
+                    used for validation by intercepting user provoked errors and
+                    returning needed validation message up to the REST layer, so
+                    that it could be used by the Angular.js web application.
+                    Also, I was creating scheduled reports using Jasper Reports
+                    and Spring Batch system, DAO layer with Hibernate calls to
+                    Oracle DB (mostly CRUD operations using HQL), service layers
+                    with needed logic and validation, and REST services on the
+                    Controller side that were consumed by an Angular 2
+                    application on the front end. I was also in charge of
+                    documenting my own work by creating the needed UML diagrams
+                    (class diagrams, sequence diagrams) and writing the
+                    explanation of the code in the software documentation. We
+                    were using Git as the version control system.
+                  </p>
+                </div>
+              </div>
+              <div class="job">
+                <h3>
+                  <a href="#experience5" data-toggle="collapse"
+                    >External Application Developer at European Commission</a
+                  >
+                </h3>
+                <p class="years">August 2018 - March 2019</p>
+                <div id="experience5" class="collapse">
+                  <p class="description">
+                    My role was to create needed applications and services using
+                    Java - J2EE and Angular 2. I was creating services in a
+                    project using Scrum methods and TDD. Technology stack
+                    included J2EE, Angular 4, Oracle DB, Sonar, and Git. My role
+                    consisted of development and maintenance of web
+                    applications, implementation of user requirements,
+                    elaboration of test programs, and participation in the
+                    project meetings.
+                  </p>
+                </div>
+              </div>
+              <div class="job">
+                <h3>
+                  <a href="#experience6" data-toggle="collapse"
+                    >Full Stack Developer at INGSOFTWARE</a
+                  >
+                </h3>
+                <p class="years">April 2019 - April 2020</p>
+                <div id="experience6" class="collapse">
+                  <p class="description">
+                    My role was to create needed applications and services using
+                    Java and Angular. I was assigned with maintaining an Angular
+                    7 web application consuming REST services for a client,
+                    fixing bugs, and creating new features. This included
+                    TypeScript, HTML, CSS code writing, debugging, and testing.
+                    It lasted for 3 months. Then, I was assigned with creating
+                    REST services consuming PostgreSQL database through
+                    CrudRepository using Java with Spring Boot, Hibernate, and
+                    S3 for POC as well as writing software documentation. That
+                    included creating entities, Business layer and needed
+                    methods (data transformation, validation, etc.), and REST
+                    API, then testing everything using Postman and also writing
+                    Unit tests using MockMvc.
+                  </p>
+                </div>
+              </div>
+              <div class="job">
+                <h3>
+                  <a href="#experience8" data-toggle="collapse"
+                    >External Full Stack Developer at Aptar</a
+                  >
+                </h3>
+                <p class="years">April 2020 - Now</p>
+                <div id="experience8" class="collapse">
+                  <p class="description">
+                    My role is to create new features and maintain existing
+                    services for Manufacturing Execution System. Uses Spring
+                    Boot, Oracle DB, Docker, Jenkins, etc. 
+                  </p>
+                </div>
+              </div>
+              <h3>Marketing related experience</h3>
+              <div class="job">
+                <div class="job">
+                  <h3>
+                    <a href="#experience1" data-toggle="collapse"
+                      >Freelance Content Writer and Digital Marketing Manager</a
+                    >
+                  </h3>
+                  <p class="years">December 2014 - April 2016</p>
+                  <div id="experience1" class="collapse">
+                    <p class="description">
+                      This included copywriting for multiple clients, social
+                      media handling, and content writing for sites.
+                    </p>
+                  </div>
+                </div>
+                <div class="job">
+                  <h3>
+                    <a href="#experience2" data-toggle="collapse"
+                      >Digital Marketing Manager for Novi Nis Project</a
+                    >
+                  </h3>
+                  <p class="years">April 2015 - July 2017</p>
+                  <div id="experience2" class="collapse">
+                    <p class="description">
+                      Made the page grow to 10,000 likes, created content,
+                      managed campaigns, and tried to optimize marketing budget
+                      to a minimal amount - it was less than $100 monthly.
+                    </p>
+                  </div>
+                </div>
+                <div class="job">
+                  <h3>
+                    <a href="#experience9" data-toggle="collapse"
+                      >Author at HelloWorld.rs</a
+                    >
+                  </h3>
+                  <p class="years">December 2020 - June 2022</p>
+                  <div id="experience9" class="collapse">
+                    <p class="description">Writing an IT related blog.</p>
+                  </div>
+                </div>
+                <div class="job">
+                  <h3>
+                    <a href="#experience10" data-toggle="collapse"
+                      >Freelance work</a
+                    >
+                  </h3>
+                  <div id="experience10" class="collapse">
+                    <p class="description">
+                      I was doing headhunting (recruiting for a role) for some
+                      companies I worked for and some of external clients. Also,
+                      I did some project management for external clients, as
+                      well as the digital marketing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section courses">
+              <h2>Courses</h2>
+              <ul>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/ultraviolet/40/coursera.png"
+                    alt="Coursera logo"
+                  />
+                  Foundations of Project Management
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/ultraviolet/40/coursera.png"
+                    alt="Coursera logo"
+                  />
+                  Project Initiation: Starting a Successful Project
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/ultraviolet/40/coursera.png"
+                    alt="Coursera logo"
+                  />
+                  Project Planning: Putting It All Together
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/ultraviolet/40/coursera.png"
+                    alt="Coursera logo"
+                  />
+                  Project Execution: Running the Project
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/color/48/linkedin.png"
+                    alt="LinkedIn logo"
+                  />
+                  Agile Foundations
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/color/48/linkedin.png"
+                    alt="LinkedIn logo"
+                  />
+                  Delegating Tasks
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/color/48/linkedin.png"
+                    alt="LinkedIn logo"
+                  />
+                  Git: Branches, Merges, and Remotes
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/color/48/linkedin.png"
+                    alt="LinkedIn logo"
+                  />
+                  Make the Move from Individual Contributor to Manager
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/color/48/linkedin.png"
+                    alt="LinkedIn logo"
+                  />
+                  New Manager Foundations
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/color/48/linkedin.png"
+                    alt="LinkedIn logo"
+                  />
+                  Onboarding New Hires as a Manager
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/color/48/linkedin.png"
+                    alt="LinkedIn logo"
+                  />
+                  Performance Management: Conducting Performance Reviews
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/color/48/linkedin.png"
+                    alt="LinkedIn logo"
+                  />
+                  Performance Management: Setting Goals and Managing Performance
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/color/48/linkedin.png"
+                    alt="LinkedIn logo"
+                  />
+                  Version Control for Everyone (2015)
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/color/48/linkedin.png"
+                    alt="LinkedIn logo"
+                  />
+                  The Six Morning Habits of High Performers
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/color/48/udemy.png"
+                    alt="Udemy logo"
+                  />
+                  Project management
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/color/48/udemy.png"
+                    alt="Udemy logo"
+                  />
+                  Angular 6 (formerly Angular 2) - The Complete Guide
+                </li>
+                <li>
+                  <img class="logo-img"
+                    src="https://img.icons8.com/color/48/google-logo.png"
+                    alt="Google logo"
+                  />
+                  Дигитална гаража
+                </li>
+              </ul>
+            </div>
+            <div class="section education">
+              <h2>Education</h2>
+              <div class="job">
+                <h3>University of Nis: Master of Science - MS, Engineering/Industrial Management</h3>
+                <p class="years">Graduation year: 2021</p>
+              </div>
+              <div class="job">
+                <h3>Univerzitet Metropolitan: Graduated Software Engineer, Computer Software Engineering</h3>
+                <p class="years">Graduation year: 2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

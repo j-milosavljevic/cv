@@ -1,16 +1,23 @@
 function downloadFullCV() {
   window.scrollTo({ top: 0 });
+  AmagiLoader.show();
+  setTimeout(() => {
+    AmagiLoader.hide();
+  }, 500);
 
   html2canvas($(".container"), {
     useCORS: true,
     pagesplit: true,
 
     onrendered: function (canvas) {
-      console.log(canvas)
+      console.log(canvas);
       var doc = new jsPDF("p", "mm");
       var imgData = canvas.toDataURL();
 
-      var imgHeight = (document.getElementById("container").getBoundingClientRect().height *25.4) / 96; //px to mm
+      var imgHeight =
+        (document.getElementById("container").getBoundingClientRect().height *
+          25.4) /
+        96; //px to mm
       var pageCount = Math.ceil(imgHeight / 297);
 
       doc.addPage("l", "mm", "a4");
@@ -28,7 +35,6 @@ function downloadFullCV() {
       doc.deletePage(1);
 
       doc.save("jovana_milosavljevic_cv.pdf");
-      window.open(imgData);
     },
   });
 }
