@@ -1,0 +1,298 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.experience-card {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.experience-card .card-body {
+  padding: 20px;
+}
+
+.experience-card .card-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.experience-card .card-subtitle {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.experience-card .card-text {
+  margin-bottom: 10px;
+}
+
+.experience-card .skills {
+  font-weight: bold;
+}
+
+.contact-info,
+.education,
+.courses {
+  margin-bottom: 50px;
+}
+
+.education {
+  margin-top: 110px;
+}
+
+.contact-info p,
+.education p,
+.courses p {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #337ab7;
+  border-color: #337ab7;
+  position: fixed;
+  width: 100%;
+  z-index: 99 !important;
+  bottom: 0;
+}
+
+.modal-header {
+  background-color: #337ab7;
+  color: #fff;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.modal-body {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 20px;
+  }
+
+  .experience-card .card-title {
+    font-size: 18px;
+  }
+
+  .experience-card .card-subtitle {
+    font-size: 14px;
+  }
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.bg-photo {
+  background-color: #f1f1f1;
+}
+
+.bg-skills {
+  background-color: #eaeaea;
+}
+
+.profile-section {
+  padding: 20px;
+}
+
+.languages-section,
+.skills-section {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.languages-section h3,
+.skills-section h3 {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.languages-section ul,
+.skills-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.languages-section li,
+.skills-section li {
+  margin-bottom: 10px;
+}
+
+.language-name,
+.language-proficiency {
+  display: inline-block;
+}
+
+.bg-skills .section {
+  padding: 20px;
+}
+
+.bg-skills .section h2 {
+  margin-bottom: 20px;
+}
+
+.bg-skills .job,
+.bg-skills .education {
+  margin-bottom: 20px;
+}
+
+.bg-skills .job h3 {
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.bg-skills .education h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.info{
+  padding-bottom: 0px!important;
+}
+
+.years {
+  font-style: italic;
+  color: #999999;
+}
+
+.description {
+  margin-bottom: 0;
+}
+
+.bg-photo {
+  background-color: #6bdeec4a;
+  height: 100%;
+}
+
+.bg-skills {
+  background-color: #fff;
+  height: 100%;
+}
+
+.profile-section {
+  padding: 20px;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.languages-section,
+.skills-section {
+  margin-top: 20px;
+}
+
+.languages-section h3,
+.skills-section h3 {
+  margin-bottom: 10px;
+}
+
+.languages-section ul,
+.skills-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.languages-section ul li,
+.skills-section ul li {
+  margin-bottom: 10px;
+}
+
+.language-name {
+  font-weight: bold;
+}
+
+.years {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description {
+  margin-bottom: 0;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-bottom: 10px;
+  background: #e5e5e51f;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.name-row {
+  text-align: center;
+  align-items: center;
+  font-size: large;
+}
+
+.logo-img {
+  width: fit-content;
+  height: fit-content;
+}
