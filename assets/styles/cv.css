@@ -191,8 +191,8 @@ ul {
   font-size: 18px;
 }
 
-.info{
-  padding-bottom: 0px!important;
+.info {
+  padding-bottom: 0px !important;
 }
 
 .years {
@@ -295,4 +295,10 @@ ul {
 .logo-img {
   width: fit-content;
   height: fit-content;
+}
+
+
+.job .collapse p:before {
+  content: attr(data-before) ": ";
+  font-weight: bold;
 }
